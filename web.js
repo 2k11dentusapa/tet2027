@@ -1,8 +1,6 @@
 const getIdsElement = document.getElementById, getClassElements = document.getElementsByClassName;
 setInterval(() => {
-    const timeCurrent = new Date();
-    const timeTet = new Date("2027-02-06 00:00:00");
-    const timeRemaining = timeTet - timeCurrent;
+    const timeRemaining = (new Date("2027-02-06 00:00:00") - (new Date());
     if (timeRemaining) {
         const ngay = Math.floor(timeRemaining / (1000 * 60 * 60 * 24)),
               gio = Math.floor(timeRemaining / (1000 * 60 * 60) % 24),
