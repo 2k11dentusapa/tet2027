@@ -4,13 +4,14 @@ setInterval(() => {
     const timeTet = new Date("2027-02-06 00:00:00");
     const timeRemaining = timeTet - timeCurrent;
     if (timeRemaining) {
-        const ngay = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const gio = Math.floor(timeRemaining / (1000 * 60 * 60) % 24);
-        const phut = Math.floor(timeRemaining / (1000 * 60) % 60);
-        const giay = Math.floor(timeRemaining / (1000) % 60);
-        [ngay, gio, phut, giay].forEach((value, index) => {
-            getIdsElement(`Js${index + 1}`).innerText = value;
-        });
+        const ngay = Math.floor(timeRemaining / (1000 * 60 * 60 * 24)),
+              gio = Math.floor(timeRemaining / (1000 * 60 * 60) % 24),
+              phut = Math.floor(timeRemaining / (1000 * 60) % 60),
+              giay = Math.floor(timeRemaining / (1000) % 60),
+              f = [ngay, gio, phut, giay];
+        for ( let i = 1; i < 5; i++) {
+            getIdsElement(`Js${i}`).innerHTML = f[i];
+        }
     } else {
         for (let i = 1; i < 5; i++) {
             getIdsElement(`Js${i}`).innerHTML = 0;
