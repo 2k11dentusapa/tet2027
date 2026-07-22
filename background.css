@@ -9,12 +9,20 @@
                  height: 225px;
                  position: absolute;
                  top: 363px;
-                 left: 930px;
                  display: flex;
                  justify-content: center;
                  border: solid 7px #fed241;
                  border-radius: 20px;
-                 }
+                 transform: rotate(0deg) scale(1.00);
+                 filter: brightness(1.00);
+                 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+          }
+.csscount:hover {
+                 transform: rotate(3deg) scale(1.04);
+                 filter: brightness(1.01);
+                 transition: transform 0.35s;
+                 box-shadow: 0 12px 24px rgba(0, 0, 0, 0.32);
+}
 .showTimeValue {font-family: 'Dancing Script';
                 font-size: 48px;
                 color: #fafafa;
