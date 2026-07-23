@@ -17,11 +17,3 @@
          dx.filter = "brightness(1.05)";
      });
  });
- document.addEventListener("keydown", function(e) {
-     if (e.ctrlKey && e.key === "c") {
-         e.preventDefault();
-     }
- });
- document.addEventListener("contextmenu", function(e) {
-     e.preventDefault();
- });
