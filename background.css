@@ -16,6 +16,7 @@
                  transform: rotate(0deg) scale(1.00);
                  filter: brightness(1.00);
                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                 transition: transform 0.35s;
           }
 .csscount:hover {
                  transform: rotate(3deg) scale(1.04);
