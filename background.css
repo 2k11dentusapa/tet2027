@@ -61,6 +61,13 @@
   background-color: #bf0000;
   border: solid 7px #bf0000;
   border-radius: 7px;
+  transform: scale(1.00);
+  
+}
+.btn:hover {
+  transition: transform 0.35s;
+  filter: brightness(1.1);
+  transform: scale(1.07);
 }
 .naps {
   color: #fafafa;
