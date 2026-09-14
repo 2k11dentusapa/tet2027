@@ -68,8 +68,9 @@ __export(index_exports, {
   jdToDate: () => jdToDate,
   t: () => t
 });
-module.exports = __toCommonJS(index_exports);
-
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = __toCommonJS(index_exports);
+}
 // src/constants/heavenly-stems.ts
 var HEAVENLY_STEMS = [
   "Gi\xE1p",
